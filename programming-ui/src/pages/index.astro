@@ -1,0 +1,20 @@
+---
+import Layout from "../layout/Layout.astro";
+import AssignmentDescription from "../components/AssignmentDescription.svelte";
+import CodeEditor from "../components/CodeEditor.svelte";
+import SubHistory from "../components/SubmissionHistory.svelte";
+import StepperIndicator from "../components/StepperIndicator.svelte";
+---
+
+<Layout>
+  <div class="container mx-auto flex flex-row gap-6">
+    <div class="basis-2/12">
+      <StepperIndicator client:only="{svelte}" />
+    </div>
+    <div class="basis-9/12">
+      <AssignmentDescription client:only="{svelte}" />
+      <CodeEditor client:only="{svelte}" />
+    </div>
+    <div class="basis-1/12"></div>
+  </div>
+</Layout>

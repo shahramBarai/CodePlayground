@@ -1,0 +1,17 @@
+---
+import Header from "./Header.svelte";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="../../public/python.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Programming assignments</title>
+  </head>
+  <body class="bg-white">
+    <Header client:only={"svelte"} />
+    <slot />
+  </body>
+</html>
